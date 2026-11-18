@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Global Briefing — 18 November 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    background: #0B0F19;
+    color: #FFFFFF;
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    overflow: hidden;
+  }
+  .page {
+    width: 1024px; height: 1024px;
+    padding: 24px;
+    display: flex; flex-direction: column;
+  }
+
+  /* --- Breaking banner --- */
+  .banner {
+    height: 36px; flex: 0 0 36px;
+    background: #FF2A2A;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+  }
+
+  /* --- Masthead --- */
+  .masthead {
+    height: 48px; flex: 0 0 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid #2A364F;
+  }
+  .masthead .brand { font-size: 28px; font-weight: 900; letter-spacing: 1px; }
+  .masthead .date { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; color: #94A3B8; }
+
+  /* --- Main two columns --- */
+  .main {
+    flex: 1 1 auto;
+    display: flex; gap: 24px;
+    margin: 12px 0;
+    min-height: 0;
+  }
+
+  /* --- Hero (left) --- */
+  .hero {
+    width: 572px; flex: 0 0 572px;
+    background: #131B2E;
+    border: 1px solid #2A364F;
+    padding: 18px 24px 16px;
+    display: flex; flex-direction: column;
+  }
+  .hero .badge {
+    font-size: 13px; font-weight: 800; letter-spacing: 1.5px;
+    color: #FFB800; text-transform: uppercase;
+  }
+  .hero .radar { margin-top: 10px; flex: 0 0 auto; }
+  .hero .radar-caption {
+    margin-top: 6px;
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    color: #94A3B8; text-transform: uppercase;
+  }
+  .hero h1 {
+    margin-top: 14px;
+    font-size: 72px; line-height: 1.08; font-weight: 900;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .hero h1 .red { color: #FF2A2A; }
+  .hero .rule { margin-top: 14px; border-top: 1px solid #2A364F; }
+  .hero ul {
+    margin-top: 12px;
+    list-style: none;
+    font-size: 14px; line-height: 1.6; color: #94A3B8;
+  }
+  .hero ul li { padding-left: 16px; position: relative; }
+  .hero ul li::before {
+    content: ""; position: absolute; left: 0; top: 8px;
+    width: 7px; height: 7px; background: #FF2A2A;
+  }
+  .hero .foot {
+    margin-top: auto; padding-top: 12px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+    color: #5B6B84; text-transform: uppercase;
+  }
+
+  /* --- Right column: 6 stacked cards --- */
+  .side {
+    width: 380px; flex: 0 0 380px;
+    display: flex; flex-direction: column; gap: 8px;
+    min-height: 0;
+  }
+  .card {
+    flex: 1 1 0; min-height: 0;
+    background: #131B2E;
+    border: 1px solid #2A364F;
+    padding: 11px 14px 10px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .card .head { display: flex; align-items: flex-start; gap: 10px; }
+  .card .num {
+    flex: 0 0 auto;
+    background: #FFB800; color: #0B0F19;
+    font-size: 14px; font-weight: 900;
+    padding: 3px 8px; line-height: 1.2;
+  }
+  .card h3 {
+    font-size: 15px; font-weight: 800; line-height: 1.25;
+    padding-top: 1px;
+  }
+  .card p {
+    margin-top: 6px;
+    font-size: 12px; line-height: 1.5; color: #94A3B8;
+  }
+
+  /* --- Bottom ticker --- */
+  .ticker {
+    height: 44px; flex: 0 0 44px;
+    border-top: 2px solid #FF2A2A;
+    box-shadow: 0 -2px 14px rgba(255, 42, 42, 0.45);
+    display: flex; align-items: center;
+    padding: 0 16px;
+    overflow: hidden; white-space: nowrap;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.2px;
+  }
+  .ticker .dot { color: #FF2A2A; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="banner">Breaking &nbsp;News &nbsp;&mdash;&nbsp; Wednesday</div>
+
+  <div class="masthead">
+    <div class="brand">GLOBAL BRIEFING</div>
+    <div class="date">WEDNESDAY 18 NOVEMBER 2026</div>
+  </div>
+
+  <div class="main">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="badge">01 &nbsp;/&nbsp; Critical Military Conflict</div>
+
+      <svg class="radar" width="524" height="300" viewBox="0 0 524 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="sweepGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FF2A2A" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FF2A2A" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#FF2A2A" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- range rings -->
+        <circle cx="262" cy="150" r="42" fill="none" stroke="#2A364F" stroke-width="1"/>
+        <circle cx="262" cy="150" r="84" fill="none" stroke="#2A364F" stroke-width="1"/>
+        <circle cx="262" cy="150" r="122" fill="none" stroke="#2A364F" stroke-width="1"/>
+        <!-- crosshair -->
+        <line x1="262" y1="28" x2="262" y2="272" stroke="#2A364F" stroke-width="1"/>
+        <line x1="140" y1="150" x2="384" y2="150" stroke="#2A364F" stroke-width="1"/>
+        <!-- sweep wedge -->
+        <path d="M262,150 L340.4,56.5 A122,122 0 0 1 382.1,171.2 Z" fill="url(#sweepGrad)"/>
+        <!-- target blips: halo + core -->
+        <g>
+          <circle cx="178" cy="96" r="9" fill="#FF2A2A" opacity="0.18"/>
+          <circle cx="178" cy="96" r="3.5" fill="#FF2A2A"/>
+          <circle cx="332" cy="82" r="9" fill="#FF2A2A" opacity="0.18"/>
+          <circle cx="332" cy="82" r="3.5" fill="#FF2A2A"/>
+          <circle cx="392" cy="136" r="9" fill="#FF2A2A" opacity="0.18"/>
+          <circle cx="392" cy="136" r="3.5" fill="#FF2A2A"/>
+          <circle cx="212" cy="206" r="9" fill="#FF2A2A" opacity="0.18"/>
+          <circle cx="212" cy="206" r="3.5" fill="#FF2A2A"/>
+          <circle cx="304" cy="228" r="9" fill="#FF2A2A" opacity="0.18"/>
+          <circle cx="304" cy="228" r="3.5" fill="#FF2A2A"/>
+        </g>
+        <!-- centre -->
+        <circle cx="262" cy="150" r="4" fill="#FFB800"/>
+      </svg>
+      <div class="radar-caption">Gulf &middot; Strait of Hormuz &mdash; 5 tankers tracked</div>
+
+      <h1>US destroys five <span class="red">Iranian</span> oil tankers</h1>
+
+      <div class="rule"></div>
+      <ul>
+        <li>US strikes Kaviz, Charminar, Horizon 1, Riesco, and Derya in the Gulf.</li>
+        <li>Iran hits back at 10 ships near Hormuz and the US base in Jordan.</li>
+        <li>Oil surges past $100 a barrel.</li>
+      </ul>
+
+      <div class="foot">Sources: US Central Command &middot; Iranian state media &middot; Brent crude</div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="side">
+      <div class="card">
+        <div class="head"><span class="num">02</span><h3>Shenzhen Summit</h3></div>
+        <p>Putin arrives; Trump, Xi, Putin meet Nov 19.</p>
+      </div>
+      <div class="card">
+        <div class="head"><span class="num">03</span><h3>Kerch Bridge Struck Again</h3></div>
+        <p>Ukraine hits the bridge a second night; Russia hits bridges too.</p>
+      </div>
+      <div class="card">
+        <div class="head"><span class="num">04</span><h3>US Loses Measles-Free Status</h3></div>
+        <p>5,400+ cases, the most since 1991.</p>
+      </div>
+      <div class="card">
+        <div class="head"><span class="num">05</span><h3>Eisenkot to Form Government</h3></div>
+        <p>Herzog bypasses Netanyahu; ally elected speaker.</p>
+      </div>
+      <div class="card">
+        <div class="head"><span class="num">06</span><h3>Gaza Winter Crisis</h3></div>
+        <p>UN warns of cold deaths; 1.7M displaced need aid.</p>
+      </div>
+      <div class="card">
+        <div class="head"><span class="num">07</span><h3>COP31 Deadlock</h3></div>
+        <p>144 items disputed as talks enter final days.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker">Pattinson named Bond <span class="dot">&nbsp;&bull;&nbsp;</span> EU freezers hit in cyber-attack <span class="dot">&nbsp;&bull;&nbsp;</span> $12B Venezuela revenue <span class="dot">&nbsp;&bull;&nbsp;</span> France protests: 4th weekend <span class="dot">&nbsp;&bull;&nbsp;</span> Peltola wins Alaska Senate</div>
+
+</div>
+</body>
+</html>
